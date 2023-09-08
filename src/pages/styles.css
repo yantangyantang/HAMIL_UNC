@@ -1,0 +1,31 @@
+/* styles.css */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+.nav-list {
+    display: flex; /* Use flexbox for horizontal alignment */
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+    }
+    .nav-list li {
+    margin-right: 20px; /* Add spacing between navigation items */
+    }
+    .nav-list li:last-child {
+    margin-right: 0; /* Remove margin from the last item */
+    }
+    .nav-item.dropdown {
+        position: relative; /* Position relative to make child dropdown absolute */
+      }
+      
+      .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fff; /* Background color for the dropdown */
+        border: 1px solid #ddd; /* Border styles for the dropdown */
+        padding: 10px;
+      }
+      
+      .nav-item.dropdown:hover .dropdown-menu {
+        display: block;
+      }
