@@ -29,3 +29,18 @@
       .nav-item.dropdown:hover .dropdown-menu {
         display: block;
       }
+
+
+/* src/styles.css or a dedicated sponsor-styles.css file */
+.sponsor-logos {
+  display: flex;
+  flex-direction: column; /* Display logos in a vertical column */
+  align-items: center;
+  margin-top: 20px;
+}
+
+.sponsor-logos img {
+  max-width: 150px;
+  height: auto;
+  margin: 30px;
+}

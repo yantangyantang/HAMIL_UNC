@@ -8,7 +8,7 @@ function Header() {
       <nav>
          <ul className="nav-list">
           <li><Link to="/">Home</Link></li>
-          <li><Link to="/people/">People</Link></li>
+          <li><Link to="/People/">People</Link></li>
           <li className="nav-item dropdown">
             <a href="/#" className="nav-link">Research</a>
             <div className="dropdown-menu">
@@ -18,11 +18,11 @@ function Header() {
             </div>
           </li>
           {/* <li><Link to="/research/">Research</Link></li> */}
-          <li><Link to="/publications/">Publications</Link></li>
-          <li><Link to="/tools-data/">Tools & Data</Link></li>
-          <li><Link to="/news/">News</Link></li>
-          <li><Link to="/sponsors/">Sponsors</Link></li>
-          <li><Link to="/about/">About</Link></li>
+          <li><Link to="/Publications/">Publications</Link></li>
+          <li><Link to="/ToolsData/">Tools & Data</Link></li>
+          <li><Link to="/News/">News</Link></li>
+          <li><Link to="/Sponsors/">Sponsors</Link></li>
+          <li><Link to="/About/">About</Link></li>
         </ul>
       </nav>
       
