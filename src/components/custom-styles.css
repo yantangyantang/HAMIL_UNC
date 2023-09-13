@@ -1,0 +1,22 @@
+/* custom-styles.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px; /* Add padding for spacing */
+  }
+  
+  .navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .navbar-nav {
+    margin-right: 0; /* Remove default margin for the navbar-nav */
+  }
+  
+  .nav-item {
+    margin-left: 20px; /* Add spacing between navigation items */
+  }
+  

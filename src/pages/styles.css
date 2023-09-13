@@ -7,7 +7,12 @@
     padding: 0; /* Remove default padding */
     }
     .nav-list li {
-    margin-right: 20px; /* Add spacing between navigation items */
+      margin-right: 20px; /* Add spacing between navigation items */
+    }
+    .nav-item {
+      background-color: #f7f7f7; /* Add a subtle background color */
+      border-radius: 4px; /* Add rounded corners */
+      margin: 0 4px; /* Adjust spacing as needed */
     }
     .nav-list li:last-child {
     margin-right: 0; /* Remove margin from the last item */
@@ -30,6 +35,17 @@
         display: block;
       }
 
+
+/* Header Styling */
+.navbar {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+}
 
 /* src/styles.css or a dedicated sponsor-styles.css file */
 .sponsor-logos {
