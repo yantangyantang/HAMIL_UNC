@@ -1,22 +1,14 @@
 /* custom-styles.css */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.active-tab {
+    background-color: #d5d3d3; /* Set the background color for the active tab */
+  }
+
+  .fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
     background-color: #fff;
-    padding: 10px 20px; /* Add padding for spacing */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   }
-  
-  .navbar-brand {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  .navbar-nav {
-    margin-right: 0; /* Remove default margin for the navbar-nav */
-  }
-  
-  .nav-item {
-    margin-left: 20px; /* Add spacing between navigation items */
-  }
-  

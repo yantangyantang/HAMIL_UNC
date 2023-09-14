@@ -1,47 +1,81 @@
 // src/components/Header.js
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'gatsby';
+import './custom-styles.css';
 
 function Header() {
-  return (
-    <header>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <Link className="navbar-brand" to="/">UNC Human and Machine Intelligence Lab</Link>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              <Link className="nav-link" to="/">Home</Link>
-            </li>
-            <li><Link className="nav-link" to="/People/">People</Link></li>
-            <li className="nav-item dropdown">
-               <a href="/#" className="nav-link">Research</a>
-               <div className="dropdown-menu">
-                 <Link className="nav-link" to="/research/past-projects">Past Projects</Link>
-                 <br></br>
-                 <Link className="nav-link" to="/research/current-projects">Current Projects</Link>
-               </div>
-             </li>
-             <li><Link className="nav-link" to="/Publications/">Publications</Link></li>
-             <li><Link className="nav-link" to="/ToolsData/">Tools & Data</Link></li>
-             <li><Link className="nav-link" to="/News/">News</Link></li>
-             <li><Link className="nav-link" to="/Sponsors/">Sponsors</Link></li>
-             <li><Link className="nav-link" to="/About/">About</Link></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-  );
+  const currentPath = typeof window !== 'undefined' ? window.location.pathname : '';
+    // Function to handle scrolling and fix/unfix the header
+    const handleScroll = () => {
+      const header = document.querySelector('.navbar');
+      if (header) {
+        if (window.scrollY > 0) {
+          header.classList.add('fixed-header');
+        } else {
+          header.classList.remove('fixed-header');
+        }
+      }
+    };
+      // Add scroll event listener on component mount
+    useEffect(() => {
+      window.addEventListener('scroll', handleScroll);
+      return () => {
+      // Remove scroll event listener on component unmount
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, []);
+return (
+  <header>
+    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <Link className="navbar-brand" to="/">UNC Human and Machine Intelligence Lab</Link>
+      <div className="collapse navbar-collapse" id="navbarNav">
+        <ul className="navbar-nav">
+          <li className={`nav-item ${currentPath === '/' ? 'active-tab' : ''}`}>
+            <Link className="nav-link" to="/">Home</Link>
+          </li>
+          <li className={`nav-item ${currentPath === '/People/' ? 'active-tab' : ''}`}>
+            <Link className="nav-link" to="/People/">People</Link>
+          </li>
+          <li className="nav-item dropdown">
+            <a href="/#" className={`nav-link ${currentPath.includes('/research/') ? 'active-tab' : ''}`}>
+              Research
+            </a>
+            <div className="dropdown-menu">
+              <Link
+                className={`nav-link ${currentPath === '/research/past-projects' ? 'active-tab' : ''}`}
+                to="/research/past-projects"
+              >
+                Past Projects
+              </Link>
+              <br></br>
+              <Link
+                className={`nav-link ${currentPath === '/research/current-projects' ? 'active-tab' : ''}`}
+                to="/research/current-projects"
+              >
+                Current Projects
+              </Link>
+            </div>
+          </li>
+          <li className={`nav-item ${currentPath === '/Publications/' ? 'active-tab' : ''}`}>
+            <Link className="nav-link" to="/Publications/">Publications</Link>
+          </li>
+          <li className={`nav-item ${currentPath === '/ToolsData/' ? 'active-tab' : ''}`}>
+            <Link className="nav-link" to="/ToolsData/">ToolsData</Link>
+          </li>
+          <li className={`nav-item ${currentPath === '/News/' ? 'active-tab' : ''}`}>
+            <Link className="nav-link" to="/News/">News</Link>
+          </li>
+          <li className={`nav-item ${currentPath === '/Sponsors/' ? 'active-tab' : ''}`}>
+            <Link className="nav-link" to="/Sponsors/">Sponsors</Link>
+          </li>
+          <li className={`nav-item ${currentPath === '/About/' ? 'active-tab' : ''}`}>
+            <Link className="nav-link" to="/About/">About</Link>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+);
 }
 
 export default Header;
