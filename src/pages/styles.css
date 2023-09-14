@@ -1,4 +1,4 @@
-/* styles.css */
+
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
 .nav-list {
@@ -47,7 +47,7 @@
   font-weight: bold;
 }
 
-/* src/styles.css or a dedicated sponsor-styles.css file */
+/* sponsor-logos.css file */
 .sponsor-logos {
   display: flex;
   flex-direction: column; /* Display logos in a vertical column */
@@ -61,7 +61,7 @@
   margin: 30px;
 }
 
-/* src/components/footer-styles.css */
+/* footer-styles */
 body {
   display: flex;
   flex-direction: column;
@@ -266,7 +266,13 @@ a.slack-logo img {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.news-date {
+  font-size: 14px; /* Adjust the font size as needed */
+  font-style: italic; /* Italicize the date */
+}
+
 /* Style for the news item title */
+
 .news-item h2 {
   margin: 0;
   font-size: 24px;
@@ -283,7 +289,7 @@ a.slack-logo img {
 .news-item a {
   text-decoration: none;
   color: #0073e6;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 /* Style for links on hover */

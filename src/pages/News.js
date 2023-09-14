@@ -28,7 +28,7 @@ export default function News() {
     <div>
       <Header />
       <div className="news-container">
-        <h1>News</h1>
+        <h1>UNC HAMIL News</h1>
         <ul className="news-list">
           {newsItems.map((news, index) => (
             <li className="news-item" key={index}>
@@ -40,7 +40,7 @@ export default function News() {
                 })}
               </span>
               <h2>
-                <a href={`/news/news${index + 1}/`}>{news.title}</a>
+                <a href={`/news/news${index + 1}/`} style={{ color: '020296' }}>{news.title}</a>
               </h2>
               <p>{news.description}</p>
             </li>
