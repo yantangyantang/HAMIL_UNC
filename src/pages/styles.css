@@ -241,3 +241,52 @@ a.slack-logo img {
   max-width: 100%;
   margin-top: 20px;
 }
+
+
+/* news-styles.css */
+
+/* Style for the news container */
+.news-container {
+  padding: 20px;
+  background-color: #f7f7f7;
+}
+
+/* Style for the news list */
+.news-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style for each news item */
+.news-item {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the news item title */
+.news-item h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+/* Style for the news item description */
+.news-item p {
+  margin: 0;
+  font-size: 16px;
+  color: #555;
+}
+
+/* Style for the links */
+.news-item a {
+  text-decoration: none;
+  color: #0073e6;
+  font-weight: bold;
+}
+
+/* Style for links on hover */
+.news-item a:hover {
+  text-decoration: underline;
+}
