@@ -61,19 +61,6 @@
   margin: 30px;
 }
 
-/* .footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  text-align: center; 
-  padding: 10px 0; 
-  font-family: 'Your-Font-Here', sans-serif; 
-  font-size: 12px; 
-  color: #979595; 
-} */
-
-
 /* src/components/footer-styles.css */
 body {
   display: flex;
@@ -89,14 +76,6 @@ body {
   overflow: auto;
 }
 
-/* .footer {
-  flex-shrink: 0; 
-  padding: 10px 0; 
-  font-family: 'Your-Font-Here', sans-serif; 
-  font-size: 11px; 
-  color: #979595;
-  text-align: center; 
-} */
 .footer {
   position: absolute;
   bottom: 0;
@@ -107,4 +86,158 @@ body {
   font-size: 11px; /* Adjust the font size to your liking */
   color: #979595; /* Dark grey color */
   text-align: center;
+}
+
+/* Contact Page Styling */
+/* .contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.contact-content {
+  text-align: center;
+  max-width: 600px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+}
+.contact-section,
+.address-section {
+  width: 48%; 
+}
+
+.contact-heading {
+  margin-top: 20px;
+}
+
+.contact-info {
+  text-align: left;
+}
+
+.contact-item {
+  margin-bottom: 20px;
+}
+
+.contact-item span {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+a.email-logo-link {
+  text-decoration: none;
+}
+
+a.email-logo-link:hover {
+  text-decoration: underline;
+}
+
+a.slack-logo-link {
+  text-decoration: none;
+}
+
+a.slack-logo-link:hover {
+  text-decoration: underline;
+}
+
+a.slack-logo {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+}
+
+a.slack-logo img {
+  margin-right: 10px;
+}
+
+.local-map {
+  max-width: 100%;
+  margin-top: 20px;
+}
+
+ */
+
+ /* Contact Page Styling */
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.contact-content {
+  text-align: center;
+  max-width: 600px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.contact-section,
+.address-section {
+  width: 48%; /* Equal width for both sections */
+}
+
+.address-info {
+  font-size: 13px;
+}
+
+.contact-heading {
+  margin-top: 20px;
+  text-align: center; /* Center the heading text */
+}
+
+.contact-info,
+.address-info {
+  text-align: center; /* Center the text */
+}
+
+.contact-item {
+  margin-bottom: 20px;
+  text-align: center; /* Center the text within the items */
+}
+
+.contact-item span {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+a.email-logo-link {
+  text-decoration: none;
+}
+
+a.email-logo-link:hover {
+  text-decoration: underline;
+}
+
+a.slack-logo-link {
+  text-decoration: none;
+}
+
+a.slack-logo-link:hover {
+  text-decoration: underline;
+}
+
+a.slack-logo {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+}
+
+a.slack-logo img {
+  margin-right: 10px;
+}
+
+.local-map {
+  max-width: 100%;
+  margin-top: 20px;
 }

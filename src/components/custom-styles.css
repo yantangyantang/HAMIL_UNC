@@ -1,5 +1,6 @@
 /* custom-styles.css */
 .active-tab {
+    font-weight: bold;
     background-color: #d5d3d3; /* Set the background color for the active tab */
   }
 
@@ -10,5 +11,5 @@
     width: 100%;
     z-index: 100;
     background-color: #fff;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 4px rgba(207, 205, 205, 0.1);
   }

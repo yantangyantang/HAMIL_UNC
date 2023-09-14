@@ -68,8 +68,8 @@ return (
           <li className={`nav-item ${currentPath === '/Sponsors/' ? 'active-tab' : ''}`}>
             <Link className="nav-link" to="/Sponsors/">Sponsors</Link>
           </li>
-          <li className={`nav-item ${currentPath === '/About/' ? 'active-tab' : ''}`}>
-            <Link className="nav-link" to="/About/">About</Link>
+          <li className={`nav-item ${currentPath === '/Contact/' ? 'active-tab' : ''}`}>
+            <Link className="nav-link" to="/Contact/">Contact</Link>
           </li>
         </ul>
       </div>
