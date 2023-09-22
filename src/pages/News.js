@@ -40,7 +40,7 @@ export default function News() {
                 })}
               </span>
               <h2>
-                <a href={`/news/news${index + 1}/`} style={{ color: '020296' }}>{news.title}</a>
+                <a href={`/news/news${index + 1}/`}>{news.title}</a>
               </h2>
               <p>{news.description}</p>
             </li>

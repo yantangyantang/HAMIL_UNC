@@ -1,0 +1,62 @@
+.tag {
+    display: inline-block;
+    background-color: #9dcbfb; /* Set the background color for tags */
+    color: #fff; /* Set the text color for tags */
+    font-size: 12px; /* Adjust the font size for tags */
+    padding: 3px 6px; /* Add padding to tags for spacing */
+    margin-right: 5px; /* Add margin between tags */
+    border-radius: 4px; /* Add rounded corners to tags */
+    cursor: pointer; /* Add pointer cursor for interactivity */
+  }
+  
+  .tag:hover {
+    background-color: #0056b3; /* Change background color on hover */
+  }
+
+  /* Search by tags input */
+.news-container input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background-color: #f7f7f7; /* Background color for the input */
+  }
+  
+  /* Year dropdown */
+  .news-container select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background-color: #f7f7f7; /* Background color for the dropdown */
+  }
+
+/* Styles for the search bars and clear buttons */
+.search-bar-container {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .search-bar {
+    width: 200px; /* Adjust the width as needed */
+  }
+  
+  .clear-buttons {
+    margin-top: 10px;
+  }
+  
+  .clear-button {
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .clear-button:hover {
+    background-color: #e0e0e0;
+  }
+  
