@@ -42,15 +42,15 @@ return (
             </a>
             <div className="dropdown-menu">
               <Link
-                className={`nav-link ${currentPath === '/research/past-projects' ? 'active-tab' : ''}`}
-                to="/research/past-projects"
+                className={`nav-link ${currentPath === '/research/pastResearch' ? 'active-tab' : ''}`}
+                to="/research/pastResearch"
               >
                 Past Projects
               </Link>
               <br></br>
               <Link
-                className={`nav-link ${currentPath === '/research/current-projects' ? 'active-tab' : ''}`}
-                to="/research/current-projects"
+                className={`nav-link ${currentPath === '/research/currentResearch' ? 'active-tab' : ''}`}
+                to="/research/currentResearch"
               >
                 Current Projects
               </Link>
